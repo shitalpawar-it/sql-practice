@@ -102,3 +102,18 @@ select salary,round(salary) as roundoff from employee;
  
  -- Display all employees sorted alphabetically--
  select* from employee order by First_name,Last_name;
+ 
+ -- Display today's date--
+ select curdate() as Todays_date from dual;
+ 
+ -- Display current time--
+ select curtime() as ascurrent_time from dual;
+ 
+ -- Display current database--
+ select database() as Currentdatabase from dual;
+ 
+ -- Display first five records--
+ select* from Employee limit 5;
+ 
+ -- Display last five records--
+ select * from Employee order by Employee_Id desc limit 5;
